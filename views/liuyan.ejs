@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>留言</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.js"></script>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/green.css">
+
+</head>
+<body>
+<%- include('loginSuccessHeader.ejs') %>
+<ul id="myTab" class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab">写留言</a></li>
+    <li><a href="#ios" data-toggle="tab">查看留言</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade in active" id="home">
+        <form action="/users/liuyan" method="post">
+            <div>标题：<input type="text" class="form-control" name="title"></div>
+            <div>内容：<textarea name="content" class="form-control" rows="10"></textarea></div>
+            <input type="submit" value="发布留言" class="btn btn-success">
+        </form>
+    </div>
+    <div class="tab-pane fade" id="ios">
+        <table class="table">
+            <caption>博主留言</caption>
+            <thead>
+            <tr class="warning">
+                <th>编号</th>
+                <th>标题</th>
+                <th>内容</th></tr>
+            </thead>
+            <tbody>
+
+            <% result.forEach(function (item,i) { %>
+            <tr class="danger">
+                 <td><%- i %></td>
+                <td><%- item.title %></td>
+                <td><%- item.content %></td>
+            </tr>
+
+            <% }) %>
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>

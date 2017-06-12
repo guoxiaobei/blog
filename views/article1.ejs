@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>article1</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/green.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" onclick="location.href='/'">郭小贝的blog</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a onclick="location.href='/login'"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+            <li><a onclick="location.href='/register'"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+
+            <li><a onclick="location.href='/about'"><span class="glyphicon glyphicon-log-in"></span> 关于我们</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="mainContent2">
+
+    <div class="blogitem" style="width: 1200px;">
+        <article>
+            <h2 class="title"><a href="/">史上最浅显易懂的Git教程！</a></h2>
+            <ul class="text">
+                <p>Windows下要使用很多Linux/Unix的工具时，需要Cygwin这样的模拟环境，Git也一样。Cygwin的安装和配置都比较复杂，就不建议你折腾了。不过，有高人已经把模拟环境和Git都打包好了，名叫msysgit，只需要下载一个单独的exe安装程序，其他什么也不用装，绝对好用。</p>
+                <p>msysgit是Windows版的Git，从https://git-for-windows.github.io下载（网速慢的同学请移步国内镜像），然后按默认选项安装即可。</p>
+                <p>安装完成后，在开始菜单里找到“Git”->“Git Bash”，蹦出一个类似命令行窗口的东西，就说明Git安装成功！</p>
+                <p class="textimg"><img src="images/text02.jpg"></p>
+                <p>安装完成后，还需要最后一步设置，在命令行输入：
+$ git config --global user.name "Your Name"
+                    $ git config --global user.email "email@example.com"
+                    因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。你也许会担心，如果有人故意冒充别人怎么办？这个不必担心，首先我们相信大家都是善良无知的群众。</p>
+                <p>其次，真的有冒充的也是有办法可查的。 注意git config命令的--global参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
+                <p>创建版本库呢?</p>
+                <p>什么是版本库呢？版本库又名仓库，英文名repository，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
+
+            </ul>
+            <div class="textfoot">
+                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">关注</a>
+            </div>
+        </article>
+        <article>
+            <h2 class="title"><a href="/">岁月留痕――我的2017</a></h2>
+            <ul class="text">
+                <p>A面――岁月留痕之时光</p>
+                <p>每逢新旧年交替时候，我就被笼罩在一股茫然的思绪里，逃也逃不脱，避也避不开，唯有让心事在静静流逝的时光里苍茫成河。</p>
+                <p>是从什么时候开始的呢，我又变得如此感时伤怀？我很羡慕那些在年终盘点总结的人们，过去的一年于他们来说，是大刀阔斧的一年，是硕果累累的一年。再不济的话，也是豪情万丈的一年。而在我那逝去的时光里，平静如水，不起一丝波澜，一年又一年。我没有盘点，因为我没有波澜壮阔；我不会去总结，因为我的总结从来就没有逼近我的心灵。我知道这于我来说，显得多么无厘头。</p>
+                <p class="textimg"><img src="images/text01.jpg"></p>
+                <p>我喜欢这样安静地坐下来，想一些似有若无的心事。尽量不去想那些飞逝的时光，尽量不去想那些形色匆忙的脚步，似乎是在害怕，在这高速运转的时空里，自己有一天会化作一堆虚无。还记得那一部《岁月神偷》的电影吗？真是要感谢来自香港的导演罗启锐，影片给我们芸芸众生留下太多的唏嘘。在如水一般逝去的时光里，皱纹爬上你的眼角，白发蔓延我的双鬓。岁月才是最好的神偷，偷走了我的青春和你的美好。</p>
+                <p>就任这时光慢慢流淌吧，对于大多数人来说，我们无非就是浩瀚时空的一些微尘。虎年走了又怎样</p>
+            </ul>
+            <div class="textfoot">
+                <a href="/">阅读全文</a><a href="/">评论</a><a href="/">关注</a>
+            </div>
+        </article>
+        <div class="pages"><span>1</span><a href="/" hidefocus="">2</a><a href="/" hidefocus="">3</a><a href="/" class="next">下一页&gt;&gt;</a></div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

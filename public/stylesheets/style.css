@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.rbox{
+  width: 500px;
+  margin: 0 auto;
+  margin-left: 100px;
+  float: left;
+}
+

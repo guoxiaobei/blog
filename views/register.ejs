@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>register</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.0.0/jquery.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.js"></script>
+
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/green.css">
+
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <br><br><br>
+
+    <img src="/images/text02.jpg" style="float: left;margin-left: 300px;">
+
+    <div class="rbox">
+        <form action="/users/register" method="post">
+            <div>账号：<input type="text" class="form-control" name="user"></div>
+            <div>密码：<input type="text" class="form-control" name="pwd"></div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">请记住我
+                </label>
+            </div>
+            <input type="submit" class="btn btn-success" value="注册">
+        </form>
+    </div>
+
+
+</body>
+</html>
